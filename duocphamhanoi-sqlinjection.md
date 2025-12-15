@@ -10,7 +10,7 @@
 
 <img width="487" height="544" alt="image" src="https://github.com/user-attachments/assets/50d7cf7e-af23-40c7-8099-295df955f806" />
 
-### 4. Kiểm thử thủ công với payload `'OR 1=1-- -` tại ô tìm kiếm.
+### 4. Kiểm thử thủ công với payload boolean-based `'OR 1=1-- -` tại ô tìm kiếm.
 
 - Kết quả trả về toàn bộ sản phẩm → có dấu hiệu SQL Injection.
 
