@@ -10,11 +10,19 @@
 
 <img width="487" height="544" alt="image" src="https://github.com/user-attachments/assets/50d7cf7e-af23-40c7-8099-295df955f806" />
 
-### 4. Kiểm thử thủ công với payload boolean-based `'OR 1=1-- -` tại ô tìm kiếm.
+### 4. Kiểm thử thủ công với payload boolean-based và error-based tại ô tìm kiếm.
+
+payload boolean-based: `'OR 1=1-- -`
 
 - Kết quả trả về toàn bộ sản phẩm → có dấu hiệu SQL Injection.
 
 <img width="563" height="880" alt="image" src="https://github.com/user-attachments/assets/338b95ba-bb20-400e-a838-179ad6d665aa" />
+
+payload error-based: `'AND updatexml(1,concat(0x7e,database(),0x7e),1)-- -`
+
+- Kết quả trả về lỗi SQL hiển thị lỗi từ DBMS
+
+<img width="1131" height="584" alt="image" src="https://github.com/user-attachments/assets/8b8c93ff-cf48-4ecc-a02d-c7c37058c63c" />
 
 ### 5. Bắt request tìm kiếm và lưu vào file request.txt.
 
